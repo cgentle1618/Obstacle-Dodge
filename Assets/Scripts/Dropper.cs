@@ -8,7 +8,6 @@ public class Dropper : MonoBehaviour
     Collider myCollider;
     Rigidbody myRigidbody;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         myMeshRenderer = GetComponent<MeshRenderer>();
@@ -20,7 +19,6 @@ public class Dropper : MonoBehaviour
         myRigidbody.useGravity = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Time.time > timeToWait)
